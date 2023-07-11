@@ -1,7 +1,9 @@
 public class Singleton {
     private static Singleton instance = new Singleton();
 
-    private Singleton() {}
+    private Singleton() {
+        System.out.println("インスタンスを生成しました。");
+    }
 
     public static Singleton getInstance() {
         return instance;
